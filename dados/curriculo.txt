@@ -1,0 +1,4 @@
+Nome: João da Silva
+E-mail: joao@email.com
+Telefone: (00) 00000-0000
+Experiência: 2 anos de experiência no mercado corporativo, atualmente focado em Python e Análise de Dados...
