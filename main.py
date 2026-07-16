@@ -1,6 +1,8 @@
 import os
 import requests
+import time
 from dotenv import load_dotenv
+from gemini import analisar_vaga_ia
 
 load_dotenv() #carregar arquivo .env com apikeys
 
@@ -93,6 +95,11 @@ if __name__ == "__main__":
             print(f"    Empresa: {empresa} (via {plataforma})")
             print(f"    Resumo: {descricao_limpa[:200]}...")
             print(f"    Link: {link}")
+
+            analise = analisar_vaga_ia(descricao_bruta, conteudo_cv)
+            print(analise)
+
+            time.sleep(12)
 
     else:
         print("[AVISO] Nenhuma vaga foi encontrada ou erro nas chaves.")
